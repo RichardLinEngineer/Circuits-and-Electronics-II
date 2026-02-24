@@ -9,7 +9,7 @@ import numpy as np
 
 def main(argv):
     if len(sys.argv) < 5:
-        print("Usage: python Phasors_and_Impedance_AC_Power_b.py <V_m value in V> <R value in ohms> <C value in  microfarad> <L in millihenry")
+        print("Usage: python Phasors_and_Impedance_AC_Power_b.py <V_m value in V> <R value in ohms> <C value in  microfarad> <L in millihenry>")
         return
     
     Vm = int(sys.argv[1])           # Volts

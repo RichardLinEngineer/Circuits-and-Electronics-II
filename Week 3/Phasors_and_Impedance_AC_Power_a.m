@@ -81,3 +81,5 @@ P_cons_mW = P_cons*base_to_mili
 %Find the average power supplied [mW] by  the voltage source Note we are using passive sign convention. So should power of a source be positive or negative? Check your results in MultiSim.
 P_supp = -P_cons;
 P_supp_mW = -P_cons_mW
+
+%End of File
