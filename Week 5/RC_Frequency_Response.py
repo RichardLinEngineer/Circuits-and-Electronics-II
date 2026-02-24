@@ -38,14 +38,14 @@ def main(argv):
     R = float(sys.argv[1])*10**3    # Ohms
     C = float(sys.argv[2])*10**-6   # Farads
     f = float(sys.argv[3])          # Hertz
-    key = sys.argv[4]   #R or C
+    key = sys.argv[4].upper()   #R or C
 
     magnitude_dB, phase_deg = transfer(R, C, f, key)
 
     #Calculate cutoff frequency
-    fc = 1/(2*np.pi*R*C)
+    fc = 1/(2*np.pi*R*C)    #[Hz]
 
-    print("For a high-pass filter VR/VS" if key == "R" else "For a low-pass filter VC/VS")
+    print("Filter type: High-pass (V_R/V_S)" if key == "R" else "Filter type: Low-pass (V_C/V_S)")
     print(f"At {f} Hz:")
     print(f"The magnitude is {magnitude_dB: .3f} dB")
     print(f"The phase is {phase_deg: .3f} degrees")
