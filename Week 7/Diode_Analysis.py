@@ -42,7 +42,7 @@ def main(argv):
 
     #Find the power dissipated through diode D2 in Watts?
     P_D2 = I_2*V_D2
-    print(f"The power dissipated through diode D2 is {P_D2:.4f}W")
+    print(f"The power dissipated through diode D2 is {P_D2:.4gf}W")
 
     #Find the power dissipated through diode D1 in Watts?
     print("The power dissipated through diode D1 is 0W")
