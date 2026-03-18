@@ -26,12 +26,12 @@ def main(argv):
     base_to_mil = 1000  #base_to_mil
 
     #Calculate the peak output voltage V_out [V]?
-    V_out = Vs-VF
+    V_out = Vs-VF   #V
     print(f"The peak output voltage V_out is {V_out:.4f}V")
 
     #Calculate the peak output current I_out [mA]?
-    I_out = (Vs-VF)/RL
-    I_out_mA = I_out*base_to_mil
+    I_out = (Vs-VF)/RL      #A
+    I_out_mA = I_out*base_to_mil        #mA
     print(f"The peak output current I_out is {I_out_mA:.4f}mA")
 
 
