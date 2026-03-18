@@ -38,7 +38,7 @@ def main(argv):
     R = float(sys.argv[1])*10**3    # Ohms
     L = float(sys.argv[2])*10**-3   # Henry
     f = float(sys.argv[3])          # Hertz
-    key = sys.argv[4].upper()   #R or L
+    key = sys.argv[4].upper()       #R or L
 
     magnitude_dB, phase_deg = transfer(R, L, f, key)
 
