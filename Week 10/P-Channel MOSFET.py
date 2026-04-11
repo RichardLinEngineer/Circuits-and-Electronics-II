@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Used to determine if a N-Channel MOSFET is ON or OFF
+# Used to determine if a P-Channel MOSFET is ON or OFF
 # Calculate the current flow 
 # Equation:
 # Ohm's Law: V=IR
@@ -16,7 +16,7 @@ def MOSFET_status(V_GS, V_th):
 
 def main(argv):
     if len(sys.argv) < 5:
-        print("Usage: python N-Channel MOSFET.py <V_DD value in V> <V_GS value in V> <V_th value in V> <R value in ohms>")
+        print("Usage: python N-Channel MOSFET.py <V_DD value in V> <V_DD value in V> <V_GS value in V> <R value in ohms>")
         return
 
     V_DD = float(argv[1])
