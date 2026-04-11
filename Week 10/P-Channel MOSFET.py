@@ -11,14 +11,14 @@ import math
 import numpy as np
 
 def MOSFET_status(V_GS, V_th):
-    return V_GS >= V_th
+    return V_GS <= V_th
 
 
 def main(argv):
-    if len(sys.argv) < 5:
-        print("Usage: python N-Channel MOSFET.py <V_DD value in V> <V_DD value in V> <V_GS value in V> <R value in ohms>")
+    if len(sys.argv) < 4:
+        print("Usage: python N-Channel MOSFET.py <Voltage of lamp in V> <V_GS value in V> <V_th value in V> <R value in ohms>")
         return
-
+    
     V_DD = float(argv[1])
     V_GS = float(argv[2])
     V_th = float(argv[3])

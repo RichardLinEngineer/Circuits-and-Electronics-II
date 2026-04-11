@@ -27,7 +27,7 @@ def main(argv):
     #Conversion Factor
     base_to_mil = 1000  # base_to_mil (multiply by 1000)
 
-    #Is the MOSFET ON or OFF? In your answer use 1 for ON and 0 for OFF.
+    #Is the N-channel MOSFET ON or OFF? In your answer use 1 for ON and 0 for OFF.
     if MOSFET_status(V_GS, V_th):
         print("MOSFET is On (1)")
         I_D = V_DD/R
