@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Used to determine the status of 2 NMOS transistor (Cutoff, Saturation, Triode)
-# Calculate resistor and Width of transistor
+# Calculate resistor and width of transistor
 # Equation:
 # Ohm's Law: V=IR
 
